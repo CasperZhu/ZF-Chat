@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Noto Sans SC", ui-sans-serif, system-ui, sans-serif;
+  --font-headline: "Plus Jakarta Sans", "Noto Sans SC", sans-serif;
+  
+  --color-primary: #6c40bf;
+  --color-primary-container: #865bda;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #fffbff;
+  
+  --color-secondary: #665687;
+  --color-secondary-container: #dac5ff;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #604f80;
+  
+  --color-surface: #fef7ff;
+  --color-surface-dim: #dfd7e3;
+  --color-surface-bright: #fef7ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f9f1fd;
+  --color-surface-container: #f3ebf7;
+  --color-surface-container-high: #ede6f1;
+  --color-surface-container-highest: #e7e0eb;
+  
+  --color-on-surface: #1d1a22;
+  --color-on-surface-variant: #4a4453;
+  --color-outline: #7b7484;
+  --color-outline-variant: #ccc3d5;
+
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-sans antialiased;
+  }
+}
+
+.glass-header {
+  background: rgba(254, 247, 255, 0.85);
+  backdrop-filter: blur(20px);
+}
+
+.chat-bg-pattern {
+  background-color: #f3fcef;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  background-attachment: fixed;
+}
+
+.message-shadow {
+  box-shadow: 0 2px 4px rgba(21, 30, 22, 0.04);
+}
+
+.ambient-shadow {
+  box-shadow: 0 8px 32px rgba(30, 26, 36, 0.06);
+}
